@@ -22,6 +22,8 @@ public class TestaLista {
 		
 		System.out.println(cursos);
 		
+		cursos.forEach(aula -> System.out.println(aula.getNome()));
+		
 	}
 	
 }
