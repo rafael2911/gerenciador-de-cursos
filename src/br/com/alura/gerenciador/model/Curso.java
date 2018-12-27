@@ -25,5 +25,9 @@ public class Curso {
 	public int getDuracaoTotal() {
 		return this.aulas.stream().mapToInt(Aula::getDuracao).sum();
 	}
+	
+	public String getNome() {
+		return nome;
+	}
 
 }
