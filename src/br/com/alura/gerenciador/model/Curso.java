@@ -6,10 +6,11 @@ import java.util.List;
 
 public class Curso {
 	
+	private String nome;
 	private List<Aula> aulas;
-	private int duracaoTotal;
 	
-	public Curso() {
+	public Curso(String nome) {
+		this.nome = nome;
 		this.aulas = new ArrayList<>();
 	}
 	
@@ -19,6 +20,10 @@ public class Curso {
 	
 	public List<Aula> getAulas() {
 		return Collections.unmodifiableList(this.aulas);
+	}
+	
+	public int getDuracaoTotal() {
+		return this.aulas.stream().mapToInt(Aula::getDuracao).sum();
 	}
 
 }
