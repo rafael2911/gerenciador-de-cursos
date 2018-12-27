@@ -4,15 +4,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import br.com.alura.gerenciador.model.Aula;
+
 public class TestaLista {
 	
 	public static void main(String[] args) {
 		
-		List<String> cursos = new ArrayList<>();
-		cursos.add("Instalando o git");
-		cursos.add("Branch, README e Commit");
-		cursos.add("Iniciando um repositório");
-		cursos.add("O que é, para que serve e como funciona?");
+		List<Aula> cursos = new ArrayList<>();
+		cursos.add(new Aula("Instalando o git", 15));
+		cursos.add(new Aula("Branch, README e Commit", 20));
+		cursos.add(new Aula("Iniciando um repositório", 12));
+		cursos.add(new Aula("O que é, para que serve e como funciona?", 19));
 		
 		System.out.println(cursos);
 		
