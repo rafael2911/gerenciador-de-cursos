@@ -1,0 +1,23 @@
+git init                         inicializa um repositório
+git status                       varre a pasta e verifica o que foi modificado/incluido/removido
+git add "nome do arquivo"        adiciona um arquivo no rastreamento do git
+git add . (ou -A)                adiciona todos os arquivos modificados ao rastreamento do git
+git comit -m "mensagem"          grava as mudanças no repositório local do git
+git log                          verifica as alterações realizadas
+git log -n "n. de commits"       exibe um determinado número de commits realizados
+git log --oneline                exibe um resumo dos commits
+git log --stat                   resumo dos arquivos e suas alterações
+git log -n 2 --oneline --stat    podemos combinar as várias opções do comando git log
+
+git diff index.html              exibe as mudanças, não rastreadas, realizadas em um determinado arquivo (nesse caso index.html)
+git diff 842d2cf..8aa07bd        diferença entre as modificações realizadas entre esses dois commits (utilizar os 7 primeiros digitos dos commits)
+git diff 8aa07bd~2               diferença entre um commit e dois imediatamente anteriores (quantidade separada por ~)
+git branch                       mostra o branch atual
+git commit -am                   adiciona ao stage e commita (dispensa o comando add)
+
+git checkout -- nomeDoArquivo    remove as alterações realizadas em um arquivo no rastreamento
+git checkout *                   remove todas as alterações em aquivos no rastreamento
+
+git reset -- nomeDoArquivo       remove as modificações dos arquivo no stage mas mantém alterações no rastreamento
+git reset                        remove as modificações de todos os arquivos no stage mas mantem no rastreamento
+git reset --hard                 remove os arquivos do stage e remove todas as alterações realizadas
