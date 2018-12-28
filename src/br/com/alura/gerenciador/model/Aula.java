@@ -1,30 +1,30 @@
 package br.com.alura.gerenciador.model;
 
 public class Aula implements Comparable<Aula> {
-	
-	private String nome;
-	private int duracao;
-	
-	public Aula(String nome, int duracao) {
-		this.nome = nome;
-		this.duracao = duracao;
+
+	private String titulo;
+	private int tempo;
+
+	public Aula(String titulo, int tempo) {
+		this.titulo = titulo;
+		this.tempo = tempo;
 	}
-	
-	public String getNome() {
-		return nome;
+
+	public String getTitulo() {
+		return titulo;
 	}
-	
-	public int getDuracao() {
-		return duracao;
+
+	public int getTempo() {
+		return tempo;
 	}
 
 	@Override
-	public int compareTo(Aula a2) {
-		return this.nome.compareTo(a2.getNome());
-	}
-	
-	@Override
 	public String toString() {
-		return "[Aula: " + this.nome + ", Duração: " + this.duracao + "]";
+		return "[Aula: " + this.titulo + ", " + this.tempo + " minutos]";
+	}
+
+	@Override
+	public int compareTo(Aula outraAula) {
+		return this.titulo.compareTo(outraAula.getTitulo());
 	}
 }
