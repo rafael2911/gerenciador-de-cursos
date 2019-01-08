@@ -22,11 +22,13 @@ public class TestaCursoComAluno {
 		Aluno a2 = new Aluno("Antonio", 1002);
 		Aluno a3 = new Aluno("Joana", 1003);
 		Aluno a4 = new Aluno("Daniela", 1004);
+		Aluno a5 = new Aluno("Daniela", 1004);
 		
 		javaColecoes.matricula(a1);
 		javaColecoes.matricula(a2);
 		javaColecoes.matricula(a3);
 		javaColecoes.matricula(a4);
+		javaColecoes.matricula(a5);
 		
 		javaColecoes.getAlunos().forEach(a -> System.out.println(a));
 		
